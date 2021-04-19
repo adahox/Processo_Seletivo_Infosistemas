@@ -6,7 +6,9 @@
   "scripts": {
     "test": "mocha --reporter spec",
     "gulp": "node_modules/.bin/gulp",
-    "dev": "nodemon --delay 3 dist/index.js"
+    "dev": "nodemon --delay 3 dist/index.js",
+    "deploy": "npm run gulp compile",
+    "serve": "node ./dist/index"
   },
   "author": "",
   "license": "ISC",
