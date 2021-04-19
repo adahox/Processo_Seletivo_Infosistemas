@@ -1,0 +1,43 @@
+<h3>Veiculo</h3>
+
+
+<div *ngIf="success_edit" class="alert alert-success" role="alert">
+    Update realizado com sucesso!<br>
+    você será redirecionado em 5s.
+  </div>
+
+
+<form [formGroup]="editarVeiculoForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label for="ano">Ano</label>
+        <input formControlName="ano" type="text" class="form-control" id="ano" aria-describedby="ano" placeholder="ano do carro">
+    </div>
+
+    <div class="form-group">
+        <label for="placa">Placa</label>
+        <input formControlName="placa" type="text" class="form-control" id="placa" aria-describedby="placa" placeholder="Placa do carro">
+    </div>
+
+    <div class="form-group">
+        <label for="marca">Marca</label>
+        <input formControlName="marca" type="text" class="form-control" id="marca" aria-describedby="marca" placeholder="Marca do carro">
+    </div>
+
+    <div class="form-group">
+        <label for="modelo">Modelo</label>
+        <input formControlName="modelo" type="text" class="form-control" id="modelo" aria-describedby="modelo" placeholder="Modelo do carro">
+    </div>
+
+    <div class="form-group">
+        <label for="chassi">Chassi</label>
+        <input formControlName="chassi" type="text" class="form-control" id="chassi" aria-describedby="chassi" placeholder="Chassi do carro">
+    </div>
+
+    <div class="form-group">
+        <label for="renavam">Renavam</label>
+        <input formControlName="renavam" type="text" class="form-control" id="renavam" aria-describedby="renavam" placeholder="Renavam do carro">
+    </div>
+
+    <button class="btn btn-success" type="submit">Confirmar Edição</button>
+</form>

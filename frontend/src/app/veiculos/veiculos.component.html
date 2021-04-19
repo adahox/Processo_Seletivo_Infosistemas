@@ -1,0 +1,54 @@
+<div *ngIf="deleted" class="alert alert-{{deleteClass}}" role="alert">
+    {{deleteMessage}}
+</div>
+
+
+<div class="row">
+    <div class="col-md-12 mt-5 mb-5">
+        <a class="btn btn-success" routerLink="/veiculos/novo" type="submit">Novo Veículo</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm">
+      
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>placa</th>
+                    <th>marca</th>
+                    <th>modelo</th>
+                    <th>chassi</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let veiculo of veiculos">
+                    <th scope="col">{{veiculo.id}}</th>
+                    <th scope="col">{{veiculo.placa}}</th>
+                    <th scope="col">{{veiculo.marca}}</th>
+                    <th scope="col">{{veiculo.modelo}}</th>
+                    <th scope="col">{{veiculo.chassi}}</th>
+                    <th scope="col">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <button  class="dropdown-item" (click)="confirmDelete(veiculo)">Remover</button>
+                                    <!-- <a routerLink="/veiculos/{{veiculo.id}}/remove">
+                                        Remover
+                                    </a> -->
+                                    <a class="dropdown-item" routerLink="/veiculos/{{veiculo.id}}/edit">Editar</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
