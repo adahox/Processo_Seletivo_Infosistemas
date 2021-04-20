@@ -1,16 +1,18 @@
-![logo of the project](https://www.infosistemas.com.br/wp-content/themes/infosistemas/assets/images/logo.png) 
+![logo of the project ](https://www.infosistemas.com.br/wp-content/themes/infosistemas/assets/images/logo.png) 
+
 # infosistemas
 
+
+
 Aplicação para processo seletivo da infosistemas
+
 
 
 ## Technology 
  
 Here are the technologies used in this project.
  
-* Node version  x.x.x
-* Angular version x.x.x
-* 
+![https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white) ![https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 # Backend
 Instalando o serve
